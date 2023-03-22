@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo</title>
+</head>
+<body>
+
+    <button id="login" onclick="user.login()">Entrar</button>
+
+    <script>
+        /*
+        Esse é o codigo JavaScript dessa página
+        */
+        
+        var name = 'Rafael Santos'
+        var email = 'rafael@santos.com'
+        var birth = '2001-11-04'
+        var CPF = '186.296.897-90'
+        var adress = 'Via Serviente 10, 16'
+
+        // Dados do usuario. Forma moderna!
+        var user = {
+            name : 'Rafael Santos',
+            email : 'rafael@santos.com',
+            birth : '2001-11-04',
+            cpf : '186.296.897-90',
+            password: '123789',
+            adress : 'Via Serviente 10, 16',
+            login: function() {
+                
+                // Recebe o email do prompt e armazena.
+                var userEmail = prompt('Digite seu email')
+            
+                // Se o usuario não digitou nada...
+                if (userEmail =='' || userEmail == null) {
+                    alert("Oops! Você não informou um email...")
+                    // Encerra a função retornando false
+                    return false
+                } else if(userEmail != user.email) {
+                    alert('Ops! Email nao encontrado')
+                    return false
+                }
+
+                 //Digite a senha
+                    var userPass = prompt('Digite sua senha:')
+                    if (userEmail == '' || userEmail == null){
+                        alert('Ops! Você não informou sua senha..')
+                        
+                        return false
+                    }
+                
+                
+            },
+            firstName: function(name){
+                alert(name.split(' ')[0])
+            },
+        }
+        
+        //Chama a função de login
+                //user.login()
+
+    </script>
+
+</body>
+
+</html>
