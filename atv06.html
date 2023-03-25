@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão06</title>
+</head>
+<body>
+    <button id = "login" onclick="login()">Entrar</button>
+    
+    <script>
+        login = function () {                          
+            var userBirth = prompt("Coloque sua data de nascimento")              
+            
+            const partes = userBirth.split("/")             
+                console.log(partes)              
+            
+            var novaData = `${partes[2]}-${partes[1]}-${partes[0]}`                          
+                document.write(novaData)         
+        }
+    </script>
+</body>
+</html>
