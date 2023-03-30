@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Rafael Santos",
+      "email": "rafael@santos.com",
+      "status": "inativo"
+    },
+    {
+      "id": "2",
+      "name": "Maricleuza Sirineuza",
+      "email": "mari@cleuza.com",
+      "status": "inativo"
+    },
+    {
+      "name": "Juliana",
+      "email": "juliana@santos.com",
+      "status": "inativo",
+      "id": "8EccSDq"
+    },
+    {
+      "name": "João Victor",
+      "email": "joao@victor.com",
+      "status": "ativo",
+      "city": "brazil",
+      "id": "nl_s0Lk"
+    }
+  ],
+  "messafes": [
+    {
+      "id": "1",
+      "from": "1",
+      "to": "2",
+      "text": "Não estou entendendo nada disso."
+    },
+    {
+      "id": "2",
+      "from": "2",
+      "to": "1",
+      "text": "Eu também num tendi nada!"
+    }
+  ]
+}
